@@ -7,7 +7,6 @@ An AI-powered tool for automating the processing and cleansing of patient data i
 - [Features](#features)
 - [Technical Details](#technical-details)
 - [Example Workflow](#example-workflow)
-- [License](#license)
 
 ## Overview
 
