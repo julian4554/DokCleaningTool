@@ -44,8 +44,8 @@ The software is structured into three main components:
 ### **2️⃣ Core Processing (`src/` directory)**
 - `main.py` – Central control module.
 - `data_loader.py` – Loads patient data from Excel files.
+- - `training.py` – Trains the model using labeled historical data.
 - `predict.py` – Applies the trained Naive Bayes model to classify new data.
-- `training.py` – Trains the model using labeled historical data.
 - `text_processing.py` – Handles **text normalization** (e.g., `ae` → `ä`).
 
 ### **3️⃣ Additional Processing (`srcDokListen/` directory)**
