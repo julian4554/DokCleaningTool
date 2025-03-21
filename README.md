@@ -50,10 +50,12 @@ The software is structured into three main components:
 
 ### **3️⃣ Additional Processing (`srcDokListen/` directory)**
 - `excel_analyser.py` – Analyzes titles and groups similar patient data entries.
-- `json_writer.py` – Enables exporting processed data as JSON.
+- `json_writer.py` – Enables better readability for subtasks as JSON.
 
 
 ## Example Workflow
+![grafik](https://github.com/user-attachments/assets/0081cf48-fc0c-4660-8a68-c9652e85576e)
+
 
 ### **Training Phase:**
 - The tool is trained using **historically labeled Excel files** (files where the "Operation" column is correctly set to "anzeigen" or "löschen").
@@ -64,10 +66,6 @@ The software is structured into three main components:
 - The trained model predicts whether each entry should be displayed or deleted.
 
 ### **Result Review & Export:**
-- Users can manually review and adjust predictions via the GUI.
-- Final results can be **saved back to Excel** or exported as **JSON**.
 
-## License
-
-This project is licensed under [LICENSE_NAME] – see the LICENSE file for details.
+- Final results can be **saved back to Excel** 
 
