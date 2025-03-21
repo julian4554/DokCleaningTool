@@ -16,8 +16,7 @@ Traditionally, patient data processing in Excel was a manual task where each row
 
 ### Who Uses This Tool?
 - **Document reviewers** working with large-scale patient data.
-- **Medical administrators** looking for efficiency in record processing.
-- **Data analysts** handling large amounts of structured medical information.
+
 
 ## Features
 
