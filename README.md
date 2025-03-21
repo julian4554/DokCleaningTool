@@ -44,7 +44,7 @@ The software is structured into three main components:
 ### **2️⃣ Core Processing (`src/` directory)**
 - `main.py` – Central control module.
 - `data_loader.py` – Loads patient data from Excel files.
-- - `training.py` – Trains the model using labeled historical data.
+- `training.py` – Trains the model using labeled historical data.
 - `predict.py` – Applies the trained Naive Bayes model to classify new data.
 - `text_processing.py` – Handles **text normalization** (e.g., `ae` → `ä`).
 
@@ -52,30 +52,6 @@ The software is structured into three main components:
 - `excel_analyser.py` – Analyzes titles and groups similar patient data entries.
 - `json_writer.py` – Enables exporting processed data as JSON.
 
-## Installation & Usage
-
-### Prerequisites
-- Python **3.7+**
-- Required dependencies (install via `requirements.txt`):
-  ```bash
-  pip install -r requirements.txt
-  ```
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-github-username/patient-data-tool.git
-   cd patient-data-tool
-   ```
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Start the GUI:**
-   ```bash
-   python GUI/main_gui.py
-   ```
 
 ## Example Workflow
 
