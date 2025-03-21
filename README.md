@@ -37,6 +37,8 @@ Traditionally, patient data processing in Excel was a manual task where each row
 The software is structured into three main components:
 
 ### **1️⃣ GUI** (Graphical User Interface)
+![GuiToolDeda](https://github.com/user-attachments/assets/ea972434-7343-4c58-b02f-cd2f66c5c972)
+
 - Located in the `GUI/` directory.
 - Includes `main_gui.py` for launching the user interface.
 - Uses custom icons (`.ico`, `.jpg`).
