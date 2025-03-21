@@ -1,37 +1,98 @@
-OrbisKi is a Python-based tool designed to analyze and classify textual data, 
-particularly suited for processing medical and clinical datasets. It automates data preprocessing, 
-text adjustments, and classification using machine learning techniques, 
-facilitating efficient and accurate data insights.
+# Patient Data Processing & Automation Tool
 
----------------------------------------------------------------------------------------------------------
+An AI-powered tool for automating the processing and cleansing of patient data in Excel spreadsheets. Designed to replace manual document review, this software uses machine learning to determine whether an entry should be displayed ("anzeigen") or deleted ("löschen").
 
-Features
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technical Details](#technical-details)
+- [Installation & Usage](#installation--usage)
+- [Example Workflow](#example-workflow)
+- [License](#license)
 
-Data Preprocessing: Automated loading and cleaning of textual data from Excel files.
+## Overview
 
-Text Adjustment: Custom text normalization including correction of common typographical errors and formatting inconsistencies.
+Traditionally, patient data processing in Excel was a manual task where each row had to be reviewed individually. This tool automates that process by training a **Naive Bayes classifier** on historical Excel datasets and applying it to new datasets to predict the appropriate action (**display or delete**).
 
-Machine Learning Classification: Implements a Multinomial Naive Bayes model optimized with GridSearchCV to classify data accurately.
+### Who Uses This Tool?
+- **Document reviewers** working with large-scale patient data.
+- **Medical administrators** looking for efficiency in record processing.
+- **Data analysts** handling large amounts of structured medical information.
 
-Data Export: Predicts and saves processed data into Excel files for further analysis or reporting.
+## Features
 
----------------------------------------------------------------------------------------------------------
-![image](https://github.com/user-attachments/assets/e28ccb4d-23fe-4cf2-a212-9d667cf0eba7)
----------------------------------------------------------------------------------------------------------
+✅ **Automated Data Classification** – Uses machine learning to classify each data entry as "display" or "delete" based on economic relevance.
 
-Structure
+✅ **Text Normalization** – Converts characters like `ae` → `ä`, `oe` → `ö`, `ue` → `ü`, ensuring consistent name processing.
 
-data_loader.py: Handles loading and saving of training and processed datasets.
-text_processing.py: Contains methods for cleaning and adjusting text data.
-training.py: Prepares data, trains, and evaluates machine learning models.
-predict.py: Uses trained models to predict new data classifications.
+✅ **Excel File Analysis** – Reads and processes Excel files containing patient information.
 
----------------------------------------------------------------------------------------------------------
+✅ **User-Friendly GUI** – Provides an intuitive interface for non-technical users.
 
-Dependencies
+✅ **Scalability** – Optimized to handle **10,000+ rows** efficiently.
 
-Python 3.x
-pandas
-sklearn
-openpyxl
+✅ **JSON Data Export** – Processed results can be saved in **JSON format** for integration with other systems.
+
+## Technical Details
+
+The software is structured into three main components:
+
+### **1️⃣ GUI** (Graphical User Interface)
+- Located in the `GUI/` directory.
+- Includes `main_gui.py` for launching the user interface.
+- Uses custom icons (`.ico`, `.jpg`).
+
+### **2️⃣ Core Processing (`src/` directory)**
+- `main.py` – Central control module.
+- `data_loader.py` – Loads patient data from Excel files.
+- `predict.py` – Applies the trained Naive Bayes model to classify new data.
+- `training.py` – Trains the model using labeled historical data.
+- `text_processing.py` – Handles **text normalization** (e.g., `ae` → `ä`).
+
+### **3️⃣ Additional Processing (`srcDokListen/` directory)**
+- `excel_analyser.py` – Analyzes titles and groups similar patient data entries.
+- `json_writer.py` – Enables exporting processed data as JSON.
+
+## Installation & Usage
+
+### Prerequisites
+- Python **3.7+**
+- Required dependencies (install via `requirements.txt`):
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-github-username/patient-data-tool.git
+   cd patient-data-tool
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Start the GUI:**
+   ```bash
+   python GUI/main_gui.py
+   ```
+
+## Example Workflow
+
+### **Training Phase:**
+- The tool is trained using **historically labeled Excel files** (files where the "Operation" column is correctly set to "anzeigen" or "löschen").
+- `training.py` processes these files and trains the Naive Bayes model.
+
+### **Prediction Phase:**
+- A new Excel file is loaded into the tool.
+- The trained model predicts whether each entry should be displayed or deleted.
+
+### **Result Review & Export:**
+- Users can manually review and adjust predictions via the GUI.
+- Final results can be **saved back to Excel** or exported as **JSON**.
+
+## License
+
+This project is licensed under [LICENSE_NAME] – see the LICENSE file for details.
 
