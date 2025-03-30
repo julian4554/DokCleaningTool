@@ -1,6 +1,6 @@
 # ML Patient Data Processing & Automation Tool
 
-An AI-powered tool i built myself for automating the processing and cleansing of patient data in Excel spreadsheets. Designed to replace manual document review, this software uses machine learning to determine whether an entry should be displayed ("anzeigen") or deleted ("löschen"). Our team saves a lot of time using my tool.
+An Machibe Learning-powered tool i built myself for automating the processing and cleansing of patient data in Excel spreadsheets. Designed to replace manual document review, this software uses machine learning to determine whether an entry should be displayed ("anzeigen") or deleted ("löschen"). Our team saves a lot of time using my tool.
 
 ## Table of Contents
 - [Overview](#overview)
