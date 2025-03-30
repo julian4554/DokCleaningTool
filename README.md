@@ -69,3 +69,8 @@ The software is structured into three main components:
 
 - Final results can be **saved back to Excel** 
 
+## Lizenz
+
+Der Quellcode dieses Projekts ist **nicht zur Wiederverwendung freigegeben**.  
+Er darf **ausschließlich zu Demonstrations- und Informationszwecken gelesen**, aber **nicht kopiert, verändert oder verwendet** werden.  
+
