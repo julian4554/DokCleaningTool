@@ -7,6 +7,7 @@ An Machine Learning-powered tool i built myself for automating the processing an
 - [Features](#features)
 - [Technical Details](#technical-details)
 - [Example Workflow](#example-workflow)
+- [Lizenz](#Lizenz)
 
 ## Overview
 
